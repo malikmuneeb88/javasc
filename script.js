@@ -59,33 +59,41 @@
 
 
 // CONDITIONAL STATEMENTS
-let age = 18;
+// let age = 18;
 
-if (age >= 18) {
-    console.log("You can vote");
-} else {
-    console.log("You cannot Vote") 
-}
+// if (age >= 18) {
+//     console.log("You can vote");
+// } else {
+//     console.log("You cannot Vote") 
+// }
 
 
-let mode = "dark";
-let color;
+// let mode = "dark";
+// let color;
 
-if (mode === "dark") {
-    color = "black";
-} else if (mode === "purple"){
-    color = "purple";
-} else {
-    color = "white";
-}
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "purple"){
+//     color = "purple";
+// } else {
+//     color = "white";
+// }
  
-console.log(color);
+// console.log(color);
 
  
-let num = 109;
+// let num = 109;
 
-if (num % 2 === 0) {
-    console.log("even");
-} else {
-    console.log("odd");
-}
+// if (num % 2 === 0) {
+//     console.log("even");
+// } else {
+//     console.log("odd");
+// }   
+
+
+// Ternary Operators
+
+let age = 15;
+
+let result = age >= 18 ? "adult" : "not adult";
+console.log(result);
