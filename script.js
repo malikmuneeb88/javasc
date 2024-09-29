@@ -212,6 +212,58 @@
 
 // Strings:
 
-let str = "Apna College";
+// let str = "Apna College";
 
-console.log(str[0]);
+// console.log(str[5]);
+
+
+// let object = {
+//     item: "pen",
+//     price: 10,
+// };
+// let output = `the cost of ${object.item} is ${object.price} rupees`;
+// console.log(output)
+// // console.log("The cost of", object.item ,  "is", object.price);
+// // Template literals
+// let specialString = `This is a template literal`;
+// console.log(specialString);
+
+
+// toUpperCase
+// let str = "Malik Muneeb"
+// str = str.toUpperCase();
+// console.log(str)
+
+
+// LowerCase
+// let str = "Malik Muneeb"
+// str = str.toLowerCase();
+// console.log(str)
+
+
+
+// // Trim Method
+// let str = "        apna  college  JS         ";
+// console.log(str.trim());
+
+
+
+
+// concat method
+// let str1 = "malik"
+// let str2 = "muneeb"
+
+// let res = str2.concat(str1)
+// console.log(res)
+
+
+// replace method
+// let str = "hellow";
+// console.log(str.replace("h", "y"));
+
+
+
+// Practice Question:
+
+let fullName = prompt("Enter your fullname without spaces :");
+console.log(fullName)
