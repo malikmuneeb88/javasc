@@ -315,19 +315,28 @@
 
 
 // Splice method
-let arr = [1, 2, 3, 4, 5, 6, 7];
-arr.splice(2, 3, 55, 67);
-console.log(arr);
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// arr.splice(2, 3, 55, 67);
+// console.log(arr);
 
 // Add Element:
-arr.splice(2, 0, 55);
-console.log(arr);
+// arr.splice(2, 0, 55);
+// console.log(arr);
 
 //Delete Element
-arr.splice(3, 1);
-console.log(arr);
+// arr.splice(3, 1);
+// console.log(arr);
 
 
 //Replace method
-arr.splice(3, 1, 101);
-console.log(arr);
+// arr.splice(3, 1, 101);
+// console.log(arr);
+
+
+
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+companies.shift();
+companies.splice(2, 1, "Ola");
+companies.push("Amazon");
+console.log(companies);
