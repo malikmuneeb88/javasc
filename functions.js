@@ -59,8 +59,15 @@
 
 
 
-let arr = ["NSTP", "NUST", "IQRA", "IBA", "ILMS"];
+// let arr = ["NSTP", "NUST", "IQRA", "IBA", "ILMS"];
 
-arr.forEach((val, idx, arr) => {
-    console.log(val.toLowerCase(), idx, arr);
-})
+// arr.forEach((val, idx, arr) => {
+//     console.log(val.toLowerCase(), idx, arr);
+// })
+
+
+let nums = [2, 4, 5, 8, 9];
+
+nums.forEach((num) => {
+    console.log(num * num);
+});
