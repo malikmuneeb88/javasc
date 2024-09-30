@@ -300,3 +300,14 @@ for (let value of marks) {
 }
 let avg = sum / marks.length;
 console.log(`The average of the class = ${avg}`);
+
+
+
+let items = [250, 645, 300, 900, 50];
+
+for (let i = 0; i < items.length; i++) {
+    let offer = items[i] / 10;
+    items[i] -= offer;
+}
+
+console.log(items)
