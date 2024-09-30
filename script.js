@@ -268,3 +268,22 @@
 // let fullName = prompt("Enter your fullname without spaces :");
 // let username = "@" + fullName + fullName.length;
 // console.log(username)
+
+
+// let marks = [97, 82, 75, 64, 36];
+// console.log(marks);
+// console.log(marks.length);
+
+
+// let heroes = ["superman", "batman", "spiderman", "thor", "hulk"];
+// // for loop
+// for (let i = 0; i < heroes.length; i++) {
+//     console.log(heroes[i])
+// }
+
+
+
+// let cities = ["karachi", "peshawar", "lahore", "islamabad", "sargodha"];
+// for (let city of cities) {
+//     console.log(city.toUpperCase());
+// }
