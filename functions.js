@@ -34,24 +34,33 @@
 
 
 // Questions:
-function countVowels(str) {
-    let count = 0;
-    for (const char of str) {
-        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
-            count++;
-        }
-    }
-    return count;
-}
+// function countVowels(str) {
+//     let count = 0;
+//     for (const char of str) {
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
 
 
-const countVow = (str) => {
-    let count = 0;
-    for (const char of str) {
-        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
-            count++;
-        }
-    }
-    return count;
-}
+// const countVow = (str) => {
+//     let count = 0;
+//     for (const char of str) {
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+
+
+
+let arr = ["NSTP", "NUST", "IQRA", "IBA", "ILMS"];
+
+arr.forEach((val, idx, arr) => {
+    console.log(val.toLowerCase(), idx, arr);
+})
