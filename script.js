@@ -290,24 +290,44 @@
 
 
 
+// Questions: Arrays
+// let marks = [85, 97, 44, 37, 76, 60];
 
-let marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
 
-let sum = 0;
-
-for (let value of marks) {
-    sum += value;
-}
-let avg = sum / marks.length;
-console.log(`The average of the class = ${avg}`);
+// for (let value of marks) {
+//     sum += value;
+// }
+// let avg = sum / marks.length;
+// console.log(`The average of the class = ${avg}`);
 
 
 
-let items = [250, 645, 300, 900, 50];
+// let items = [250, 645, 300, 900, 50];
 
-for (let i = 0; i < items.length; i++) {
-    let offer = items[i] / 10;
-    items[i] -= offer;
-}
+// for (let i = 0; i < items.length; i++) {
+//     let offer = items[i] / 10;
+//     items[i] -= offer;
+// }
 
-console.log(items)
+// console.log(items)
+
+
+
+// Splice method
+let arr = [1, 2, 3, 4, 5, 6, 7];
+arr.splice(2, 3, 55, 67);
+console.log(arr);
+
+// Add Element:
+arr.splice(2, 0, 55);
+console.log(arr);
+
+//Delete Element
+arr.splice(3, 1);
+console.log(arr);
+
+
+//Replace method
+arr.splice(3, 1, 101);
+console.log(arr);
