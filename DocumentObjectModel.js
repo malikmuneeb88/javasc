@@ -20,3 +20,11 @@ let h2 = document.querySelector("h2");
 console.dir(h2.innerText);
 
 h2.innerText = h2.innerText + "from malik muneeb and from apna college"
+
+let divs = document.querySelectorAll(".box");
+
+let index = 1;
+for (div of divs) {
+    div.innerText = `this is the new first box ${index}`;
+    index++;
+}
