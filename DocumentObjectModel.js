@@ -9,8 +9,14 @@
 // console.log(headings);
 
 
-let firstElement = document.querySelector("p");
-console.dir(firstElement);
+// let firstElement = document.querySelector("p");
+// console.dir(firstElement);
 
-let allElements = document.querySelectorAll("p");
-console.dir(allElements);
+// let allElements = document.querySelectorAll("p");
+// console.dir(allElements);
+
+
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);
+
+h2.innerText = h2.innerText + "from malik muneeb and from apna college"
