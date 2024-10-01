@@ -66,8 +66,75 @@
 // })
 
 
-let nums = [2, 4, 5, 8, 9];
+// let nums = [2, 4, 5, 8, 9];
 
-nums.forEach((num) => {
-    console.log(num * num);
-});
+// nums.forEach((num) => {
+//     console.log(num * num);
+// });
+
+
+
+// filter method:
+// let arr = [1, 2, 3, 4, 5, 6];
+ 
+// let evenArr = arr.filter((val) => {
+//     return val % 2 === 0;
+// });
+
+// console.log(evenArr);
+
+
+// Reduce method:
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// const output = arr.reduce((res, curr) => {
+//     return res + curr;
+// });
+
+// console.log(output);
+
+
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// const output = arr.reduce((res, curr) => {
+//     return res > curr ? prev : curr;
+// });
+
+// console.log(output);
+
+
+
+
+// Questions:
+// let marks = [91, 95, 99, 68, 65, 34, 50];
+
+// let toppers = marks.filter((val) => {
+//     return val > 90;
+// })
+
+// console.log(toppers);
+
+
+
+
+let n = prompt("Enter a number :");
+
+let arr = [];
+for (let i = 1; i <= n; i++) {
+    arr[i - 1] = i;
+}
+
+console.log(arr);
+
+let sum = arr.reduce((res, curr) => {
+    return res + curr;
+})
+
+console.log(sum);
+
+let factorial = arr.reduce((res, curr) => {
+    return res * curr;
+})
+
+console.log(factorial);
