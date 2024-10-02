@@ -21,11 +21,20 @@ button {
 } */
 
 
-.box {
+/* .box {
     height: 200px;
     width: 150px;
     border: 2px solid black;
     margin: 3px;
     text-align: center;
     background-color: cyan;
+} */
+
+#boxes {
+    height: 200px;
+    width: 150px;
+    background-color: yellow;
+    color: black;
+    border: 3px solid black;
+    text-align: center;
 }
