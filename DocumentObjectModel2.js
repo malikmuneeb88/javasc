@@ -1,4 +1,4 @@
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
 // console.log(div);
 
 // let id = div.getAttribute("id");
@@ -15,8 +15,29 @@ let div = document.querySelector("div");
 // console.log(para.setAttribute("class", "newclass"));
 
 
-div.style.backgroundColor = "red";
+// div.style.backgroundColor = "red";
 
-div.style.fontSize = "30px";
+// div.style.fontSize = "30px";
 
-div.innerText = "My name is malik muneeb";
+// div.innerText = "My name is malik muneeb";
+
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me!";
+// console.log(newBtn);
+
+// let div = document.querySelector("div");
+// div.append(newBtn);
+
+// let div = document.querySelector("div");
+// div.prepend(newBtn);
+
+// let div = document.querySelector("div");
+// div.after(newBtn);
+
+// let div = document.querySelector("div");
+// div.before(newBtn);
+
+
+
+let newHeading = document.createElement("h1");
+h1.innerHTML = "<i>Hi, I am new !</i>";
