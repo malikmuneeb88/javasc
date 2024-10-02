@@ -39,5 +39,10 @@
 
 
 
-let newHeading = document.createElement("h1");
-h1.innerHTML = "<i>Hi, I am new !</i>";
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>Hi, I am new !</i>";
+
+// document.querySelector("body").prepend(newHeading);
+
+// let para = document.querySelector("p");
+// para.remove();
