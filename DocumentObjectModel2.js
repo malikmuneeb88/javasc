@@ -46,3 +46,21 @@
 
 // let para = document.querySelector("p");
 // para.remove();
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me!";
+
+newBtn.style.color = "white";
+newBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newBtn);
+
+
+
+let para = document.querySelector("p");
+// para.getAttribute("class")
+
+// let para = document.querySelector("p");
+// para.getAttribute("class", "newClass");
+
+para.classList.add("newClass");
