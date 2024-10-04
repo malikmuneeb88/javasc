@@ -53,7 +53,7 @@ let currentMode = "light";
 modeBtn.addEventListener("click", () => {
     if(currentMode === "light") {
         currentMode = "dark";
-        body.classList.remove("light");
+        body.classList.remove("light");     
         body.classList.add("dark")
     } else {
         currentMode = "light";
