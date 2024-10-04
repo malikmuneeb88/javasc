@@ -34,4 +34,4 @@ const checkWinner = () => {
     for(let pattern in winPatterns) {
         console.log(pattern);
     }
-}
+};
