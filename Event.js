@@ -1,4 +1,4 @@
-let btn1 = document.querySelector("#btn1");
+// let btn1 = document.querySelector("#btn1");
 
 // btn1.onclick = (event) => {
 //     console.log(event);   //event object ki value print hogii
@@ -22,23 +22,44 @@ let btn1 = document.querySelector("#btn1");
 // }
 
 
-btn1.addEventListener("click", (evt) => {
-    console.log("button1 was clicked - handler1");
-});
+// btn1.addEventListener("click", (evt) => {
+//     console.log("button1 was clicked - handler1");
+// });
 
 
-btn1.addEventListener("click", () => {
-    console.log("button1 was clicked - handler2");
-});
+// btn1.addEventListener("click", () => {
+//     console.log("button1 was clicked - handler2");
+// });
 
-const handler3 = () => {
-    console.log("button1 was clicked - handler3");
-}
+// const handler3 = () => {
+//     console.log("button1 was clicked - handler3");
+// }
 
-btn1.addEventListener("click", handler3);
+// btn1.addEventListener("click", handler3);
 
-btn1.addEventListener("click", () => {
-    console.log("button1 was clicked - handler4");
-});
+// btn1.addEventListener("click", () => {
+//     console.log("button1 was clicked - handler4");
+// });
 
-btn1.removeEventListener("click", handler3);
+// btn1.removeEventListener("click", handler3);
+
+
+
+
+let modeBtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currentMode = "light";
+
+modeBtn.addEventListener("click", () => {
+    if(currentMode === "light") {
+        currentMode = "dark";
+        body.classList.remove("light");
+        body.classList.add("dark")
+    } else {
+        currentMode = "light";
+        body.classList.remove("dark");
+        body.classList.add("light")
+    }
+
+    console.log(currentMode);
+}); 
