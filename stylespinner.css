@@ -1,0 +1,12 @@
+#spinner {
+    height: 300px;
+    width: 300px;
+    border: 30px solid;
+    border-radius: 50%;
+    border-color: red black red black;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    to {transform: rotate(360deg)}
+}
