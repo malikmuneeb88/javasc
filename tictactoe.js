@@ -58,6 +58,12 @@ const showWinner = (winner) => {
     disableBoxes();
 }
 
+const showDraw = () => {
+    msg.innerText = "It's a draw!";
+    msgContainer.classList.remove("hide");
+    disableBoxes();
+}
+
 const checkWinner = () => {
     for(let pattern of winPatterns) {
         let pos1Val = boxes[pattern[0]].innerText;
@@ -68,6 +74,13 @@ const checkWinner = () => {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 showWinner(pos1Val);
             }
+        }
+    }
+
+    if (!winnerFound) {
+        let allBoxesFilled = Array.from(boxes).every(box => box.innerText !== "");
+        if (allBoxesFilled) {
+            showDraw(); // If all boxes are filled and no winner, it's a draw
         }
     }
 };     
