@@ -65,6 +65,8 @@ const showDraw = () => {
 }
 
 const checkWinner = () => {
+    let winnerFound = false;
+    
     for(let pattern of winPatterns) {
         let pos1Val = boxes[pattern[0]].innerText;
         let pos2Val = boxes[pattern[1]].innerText;
@@ -73,6 +75,8 @@ const checkWinner = () => {
         if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 showWinner(pos1Val);
+                winnerFound = true;
+                break;
             }
         }
     }
