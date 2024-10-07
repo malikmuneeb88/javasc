@@ -1,0 +1,10 @@
+.textImage {
+    color: white;   
+    height: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjmZj8oTE2vec1u4n47ihNxhq42T7nwMm4A&s");
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
