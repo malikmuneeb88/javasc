@@ -6,6 +6,9 @@ const employee = {
 
 const aqibMuneeb = {
     salary: 50000,
+    calculateTax() {
+        console.log("Tax rate is 20%"); 
+    }
 };
 
 const aqibMuneeb2 = {
