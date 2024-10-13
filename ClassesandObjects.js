@@ -29,7 +29,7 @@ const aqibMuneeb5 = {
 
 // agr humne first function ko dusre mn call krna ho
 aqibMuneeb.__proto__ = employee;
-aqibMuneeb.__proto__ = employee;
-aqibMuneeb.__proto__ = employee;
-aqibMuneeb.__proto__ = employee;
-aqibMuneeb.__proto__ = employee;
+aqibMuneeb2.__proto__ = employee;
+aqibMuneeb3.__proto__ = employee;
+aqibMuneeb4.__proto__ = employee;
+aqibMuneeb5.__proto__ = employee;
