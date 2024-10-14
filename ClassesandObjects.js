@@ -66,8 +66,9 @@
 
 
 class Person {
-    constructor() {
+    constructor(name) {
         this.species = "homo sapiens";
+        this.name = name;
     }
 
     eat() {
@@ -84,12 +85,16 @@ class Person {
 }
 
 class Engineer extends Person {
+    constructor(name) {
+        super(name); // To invoke the parent constructor
+    }
     work() {
+        super.eat();
         console.log("solve Problems, build something");
     }
 }
 
-let muneebObj = new Engineer();
+let muneebObj = new Engineer("Muneeb");
 
 // class Child extends Parent {}
 
