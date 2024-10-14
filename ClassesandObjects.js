@@ -65,37 +65,69 @@
 // // lexus.setBrand("lexus");
 
 
-class Person {
-    constructor(name) {
-        this.species = "homo sapiens";
-        this.name = name;
-    }
+// class Person {
+//     constructor(name) {
+//         this.species = "homo sapiens";
+//         this.name = name;
+//     }
 
-    eat() {
-        console.log("eat");
-    }
+//     eat() {
+//         console.log("eat");
+//     }
 
-    sleep() {
-        console.log("sleep"); 
-    }
+//     sleep() {
+//         console.log("sleep"); 
+//     }
 
-    work() {
-        console.log("do nothing");
-    }
-}
+//     work() {
+//         console.log("do nothing");
+//     }
+// }
 
-class Engineer extends Person {
-    constructor(name) {
-        super(name); // To invoke the parent constructor
-    }
-    work() {
-        super.eat();
-        console.log("solve Problems, build something");
-    }
-}
+// class Engineer extends Person {
+//     constructor(name) {
+//         super(name); // To invoke the parent constructor
+//     }
+//     work() {
+//         super.eat();
+//         console.log("solve Problems, build something");
+//     }
+// }
 
-let muneebObj = new Engineer("Muneeb");
+// let muneebObj = new Engineer("Muneeb");
 
 // class Child extends Parent {}
 
 // let obj = new Child();
+
+
+
+
+// Question1: You are creating a website for your college. Create a class User with 2 properties, name and email. It also has a method called viewData() that allows user to view website data.
+let Data = "secret Data"
+
+class User {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    viewData() {
+        console.log("data = ", Data);
+    }
+}
+
+class Admin extends User {
+    constructor(name, email) {
+        super(name, email);
+    }
+
+    editData() {
+        Data = "some new data";
+    }
+}
+
+let student1 = new User("muneeb", "mmm@gmail.com");
+let student2 = new User("zain", "zain@gamil.com");
+
+let admin1 = new Admin("admin", "admin@gmail.com");
