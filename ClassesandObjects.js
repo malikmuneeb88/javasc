@@ -36,30 +36,53 @@
 
 
 
-class ToyotaCar {
-    constructor(brand, mileage) {
-        console.log("creating new object");
-        this.brand = brand;
-        this.mileage = mileage;
-    }
-    start() {
-        console.log("start");
+// class ToyotaCar {
+//     constructor(brand, mileage) {
+//         console.log("creating new object");
+//         this.brand = brand;
+//         this.mileage = mileage;
+//     }
+//     start() {
+//         console.log("start");
+//     }
+
+//     stop() {
+//         console.log("stop");
+//     }
+
+//     // setBrand(brand) {
+//     //     this.brand = brand;
+//     // }
+// }
+
+// let fortuner = new ToyotaCar("fortuner", 10);
+// console.log(fortuner);
+// // fortuner.setBrand("fortuner");
+
+
+// let lexus = new ToyotaCar("lexus", 12);
+// console.log(lexus);
+// // lexus.setBrand("lexus");
+
+
+class Person {
+    eat() {
+        console.log("eat");
     }
 
-    stop() {
-        console.log("stop");
+    sleep() {
+        console.log("sleep"); 
     }
-
-    // setBrand(brand) {
-    //     this.brand = brand;
-    // }
 }
 
-let fortuner = new ToyotaCar("fortuner", 10);
-console.log(fortuner);
-// fortuner.setBrand("fortuner");
+class Engineer {
+    work() {
+        console.log("solve Problems, build something");
+    }
+}
 
+let muneebObj = Engineer();
 
-let lexus = new ToyotaCar("lexus", 12);
-console.log(lexus);
-// lexus.setBrand("lexus");
+// class Child extends Parent {}
+
+// let obj = new Child();
