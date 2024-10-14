@@ -66,6 +66,10 @@
 
 
 class Person {
+    constructor() {
+        this.species = "homo sapiens";
+    }
+
     eat() {
         console.log("eat");
     }
@@ -73,15 +77,19 @@ class Person {
     sleep() {
         console.log("sleep"); 
     }
+
+    work() {
+        console.log("do nothing");
+    }
 }
 
-class Engineer {
+class Engineer extends Person {
     work() {
         console.log("solve Problems, build something");
     }
 }
 
-let muneebObj = Engineer();
+let muneebObj = new Engineer();
 
 // class Child extends Parent {}
 
