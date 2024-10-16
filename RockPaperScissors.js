@@ -3,13 +3,31 @@ let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
 
+const genCompChoice = () => {
+    const options = ["rock", "paper", "scissors"];
+    const randIdx = Math.floor(Math.random() * 3);
+    return options[randIdx];
+}
+
+const drawGame = () => {
+    console.log("Draw");
+}
+
 const playGame = (userChoice) => {
     console.log(userChoice)
+    const compChoice = genCompChoice();
+    console.log(compChoice);
+
+    if(userChoice === compChoice) {
+        drawGame();
+    } else {
+        let 
+    }
 }
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
-        const userChoice = choice.getAttribute("#id");
+        const userChoice = choice.getAttribute("id");
         playGame(userChoice)
     });
 });
