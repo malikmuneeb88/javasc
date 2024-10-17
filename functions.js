@@ -1,119 +1,119 @@
-// function myFunction() {
-//     console.log("This office is beautifull!")
-// }
+function myFunction() {
+    console.log("This office is beautifull!")
+}
 
-// myFunction();
-
-
-// function sum (x, y) {
-//     add = x + y;
-//     return add;
-// }
-
-// let val = sum(56, 83);
-// console.log(val);
+myFunction();
 
 
-// function sum(a, b) {
-//     return a + b;
-// }
+function sum (x, y) {
+    add = x + y;
+    return add;
+}
 
-// // Arrow Function: 
-// const arrowSum = (a, b) => {
-//     console.log(a + b);
-// };
+let val = sum(56, 83);
+console.log(val);
 
-// function mul(a, b) {
-//     return a * b;
-// }
 
-// const arrowMul = (a, b) => {
-//     console.log(a * b);
-// }; 
+function sum(a, b) {
+    return a + b;
+}
+
+// Arrow Function: 
+const arrowSum = (a, b) => {
+    console.log(a + b);
+};
+
+function mul(a, b) {
+    return a * b;
+}
+
+const arrowMul = (a, b) => {
+    console.log(a * b);
+}; 
 
 
 
 // Questions:
-// function countVowels(str) {
-//     let count = 0;
-//     for (const char of str) {
-//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
-//             count++;
-//         }
-//     }
-//     return count;
-// }
+function countVowels(str) {
+    let count = 0;
+    for (const char of str) {
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            count++;
+        }
+    }
+    return count;
+}
 
 
 
-// const countVow = (str) => {
-//     let count = 0;
-//     for (const char of str) {
-//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
-//             count++;
-//         }
-//     }
-//     return count;
-// }
+const countVow = (str) => {
+    let count = 0;
+    for (const char of str) {
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            count++;
+        }
+    }
+    return count;
+}
 
 
 
 
-// let arr = ["NSTP", "NUST", "IQRA", "IBA", "ILMS"];
+let arr1 = ["NSTP", "NUST", "IQRA", "IBA", "ILMS"];
 
-// arr.forEach((val, idx, arr) => {
-//     console.log(val.toLowerCase(), idx, arr);
-// })
+arr1.forEach((val, idx, arr) => {
+    console.log(val.toLowerCase(), idx, arr);
+})
 
 
-// let nums = [2, 4, 5, 8, 9];
+let nums = [2, 4, 5, 8, 9];
 
-// nums.forEach((num) => {
-//     console.log(num * num);
-// });
+nums.forEach((num) => {
+    console.log(num * num);
+});
 
 
 
 // filter method:
-// let arr = [1, 2, 3, 4, 5, 6];
+let arr2 = [1, 2, 3, 4, 5, 6];
  
-// let evenArr = arr.filter((val) => {
-//     return val % 2 === 0;
-// });
+let evenArr = arr.filter((val) => {
+    return val % 2 === 0;
+});
 
-// console.log(evenArr);
+console.log(evenArr);
 
 
 // Reduce method:
-// let arr = [1, 2, 3, 4, 5, 6];
+let arr3 = [1, 2, 3, 4, 5, 6];
 
-// const output = arr.reduce((res, curr) => {
-//     return res + curr;
-// });
+const output1 = arr.reduce((res, curr) => {
+    return res + curr;
+});
 
-// console.log(output);
-
-
-
-// let arr = [1, 2, 3, 4, 5, 6];
-
-// const output = arr.reduce((res, curr) => {
-//     return res > curr ? prev : curr;
-// });
-
-// console.log(output);
+console.log(output);
 
 
 
+let arr4 = [1, 2, 3, 4, 5, 6];
 
-// Questions:
-// let marks = [91, 95, 99, 68, 65, 34, 50];
+const output = arr.reduce((res, curr) => {
+    return res > curr ? prev : curr;
+});
 
-// let toppers = marks.filter((val) => {
-//     return val > 90;
-// })
+console.log(output);
 
-// console.log(toppers);
+
+
+
+Questions:
+let marks = [91, 95, 99, 68, 65, 34, 50];
+
+let toppers = marks.filter((val) => {
+    return val > 90;
+})
+
+console.log(toppers);
 
 
 
