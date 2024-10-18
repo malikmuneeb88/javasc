@@ -1,12 +1,39 @@
 function getData(dataId, getNextData) {
-    setTimeout(() => {
-        console.log("data", dataId);
-        if(getNextData) {
-            getNextData();
-        }
-        
-    }, 2000);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataId);
+            resolve("success");
+        }, 2000);
+    });
 }
+
+
+//ASYNC-AWAIT
+async function getAllData() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+    await getData(6);
+}
+            
+    
+
+
+// Promise chain
+getData(1)
+    .then((res) => {
+        return getData(2);
+})
+    .then((res) => {
+        return getData(3);
+})
+    .then((res) => {
+        console.log(res);
+    })
+
+
 
 //Callback Hell:
 getData(1, () => {
@@ -18,8 +45,20 @@ getData(1, () => {
 });
 
 
+//IIFE FUNCTION
+(async function () {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+    await getData(5);
+    await getData(6);
+})();
 
-//Promise Functiom
+
+
+
+// //Promise Functiom
 const getPromise = () => {
     return new Promise((resolve, reject) => {
         console.log("I am a promise");
@@ -49,22 +88,10 @@ function getData(dataId, getNextData) {
     })
 }
 
-//Promise chain
-getData(1)
-    .then((res) => {
-        return getData(2);
-})
-    .then((res) => {
-        return getData(3);
-})
-    .then((res) => {
-        console.log(res);
-    })
 
 
 
-
-//ASYNCHRONOUS FUNCTION
+// //ASYNCHRONOUS FUNCTION
 function asyncFunc1() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -90,4 +117,16 @@ asyncFunc2().then((res) => {
         
     });
 });
+
+
+
+// AWAIT FUNCTION
+function api() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("weather api");
+            resolve(200);
+        }, 2000);
+    });
+}
 
